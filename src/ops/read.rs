@@ -170,7 +170,7 @@ pub fn read<'a, S, D, T>(mut ctxt: &mut CommandContext<'_>, source: S, rect: &Re
             }
         },
         Source::DefaultFramebuffer(read_buffer) => {
-            (false, ReadSourceType::Color)       // FIXME: wrong
+            (false, ReadSourceType::Depth)       // FIXME: wrong
         },
     };
 
